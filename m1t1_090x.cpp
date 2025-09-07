@@ -4,6 +4,10 @@ M1T1 for the online secitions
 Joshua Noriega 
 9/7/2025
 Program will greet the user
+
+IF it happens "stage changes" , no, push directly
+"commit and sync". always
+"pull?" doesn't matter
  */
 #include <iostream>
 using namespace std;
@@ -14,7 +18,7 @@ int main() {
   //special FX: Says "Hello" to the user.
   
   // Let's say hello
-  cout << "Hello, user!" << endl; 
+  cout << "Hello, user!" << endl; //"end line" not "end 1"
 
 
  return 0; // no errors    
