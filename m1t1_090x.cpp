@@ -8,6 +8,7 @@ Program will greet the user
 IF it happens "stage changes" , no, push directly
 "commit and sync". always
 "pull?" doesn't matter
+Error
  */
 #include <iostream>
 using namespace std;
