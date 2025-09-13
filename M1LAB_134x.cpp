@@ -18,7 +18,7 @@ int main() {
     cout << "'s apple orchard." << endl;
     cout << "We have" << apples;
     cout << "apples in stock" << endl;
-    cout << "Apples are currently $" << ;
+    cout << "Apples are currently $";
     cout << totalPrice << "eac." <<endl;
     //Finale line, to print totalPrice
     cout << "If you want them all, that will be $" << 
