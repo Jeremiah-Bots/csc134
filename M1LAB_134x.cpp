@@ -14,14 +14,14 @@ int main() {
 
     // print all the information about the orchard
     // TODO
-    cout << "welcome to " << name;
+    cout << "Welcome to " << name;
     cout << "'s apple orchard." << endl;
     cout << "We have " << apples;
-    cout << " apples in stock" << endl;
+    cout << " apples in stock." << endl;
     cout << "Apples are currently $";
-    cout << totalPrice << " each." <<endl;
+    cout << pricePerApple << " each." <<endl;
     //Finale line, to print totalPrice
-    cout << "If you want them all, that will be $" << 
+    cout << "If you want them all, that will be $." << 
     totalPrice << endl;
 
 }
