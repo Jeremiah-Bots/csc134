@@ -35,7 +35,7 @@ int main()  {
 
     // Calculate total price
     total_cost = amount_purchase * cost_each;
-    // Formatting: Set all priuces to 2 decimal places
+    // Formatting:  fSet all priuces to 2 decimal places
     cout << setprecision(2) << fixed;
     // Give the result
     cout << "For " << amount_purchase << " " << product << endl;
