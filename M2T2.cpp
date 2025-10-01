@@ -20,7 +20,7 @@ int main() {
 
     //Greet user and take order
     cout << "Welcome to our CSC restuarant!!" << endl;
-    cout << "You ordered one" << item << "." << endl;
+    cout << "You ordered one " << item << "." << endl;
 
 
     
