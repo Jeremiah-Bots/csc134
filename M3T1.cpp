@@ -32,5 +32,18 @@ int main() {
     // Print the area
     cout << "Rectangle one has the area of " << area1 << endl;
     cout << "Rectangle two has the area of " << area2 << endl;
+
+    // determine which is bigger
+    if  (area1 > area2) {
+        cout << "Rectangle one is bigger" << endl;
+
+    }
+    if (area2 > area1) {
+        cout << "Rectangle two is bigger" << endl;
+    }
+    if (area2 == area1) {
+        cout << "They are the same size" << endl;
+    }
+    
     return 0;
 }
