@@ -31,6 +31,6 @@ int main() {
 
     // Print the area
     cout << "Rectangle one has the area of " << area1 << endl;
-    cout << "Rectangle two has the area of " << area1 << endl;
+    cout << "Rectangle two has the area of " << area2 << endl;
     return 0;
 }
