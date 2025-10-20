@@ -50,9 +50,9 @@ void prisonbars() {
   else if (0 == choice2) {
     cout << "You should focus on escaping right now." << endl;
   }
- 
+}
 
-void cell() {
+void cell(){
   // this function is called in main if the user chooses 1.
   int choice3;
   int key;
@@ -64,12 +64,14 @@ void cell() {
     cout << "Grab key (1) or ignore the key (2)" << endl;
     cin >> choice3;
     if (1 == choice3) {
-      key = 1;
+      key = true;
       cout <<" You grab the key and go towards the prisonbars" << endl;
       prisonbars2();
     }
-    else if  (2 == choice3)
-    main()
+      else if  (2 == choice3) {
+      cout << "You go back the middle of the cell" << endl;
+      main();
+     }
   }
 }
 
