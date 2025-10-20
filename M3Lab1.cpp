@@ -57,7 +57,7 @@ void cell(){
   int choice3;
   int key;
   cout << "You explore the cell. A stone bed and a bucket not much for the decor but it is for criminals so you cant complain. A glint in the bucket catches your eye, maybe you should check it out. " << endl;
-  cout << "Check the bucket (1) or Go to the prison cell (2)" << endl;
+  cout << "Check the bucket (1) or Go back to the middle of the cell(2)" << endl;
   cin >> choice3;
   if (1 == choice3) {
     cout << "You look into the bucket and see a key hidden within the filth" << endl;
@@ -68,17 +68,28 @@ void cell(){
       cout <<" You grab the key and go towards the prisonbars" << endl;
       prisonbars2();
     }
-      else if  (2 == choice3) {
-      cout << "You go back the middle of the cell" << endl;
+    else if (2 == choice3) {
+      cout << "You move away from the bucket in disgust " << endl;
       main();
-     }
+    }
   }
+  else if (2 == choice3) {
+    cout << "You go back the middle of the cell" << endl;
+    main();
+  }
+  
 }
 
 void prisonbars2() {
 int key = 1;
 if (1 == key); {
     cout << "Open the door with the key" << endl;
-    Hallway ();
+    Hallway();
   }
+}
+
+void Hallway () {
+  cout << "You managed to get out the cell it's just a matter of time before you can escape" << endl;
+  cout << "Thank you for playing the demo full game out soon" << endl;
+
 }
