@@ -145,7 +145,7 @@ void question2a(){
     tax_amount = item_price * tax_percent;
     total = item_price + tax_amount;
 
-    //print the receipt
+    //print    the receipt
     cout << setprecision(2) << fixed;
     cout << "Thank you for shopping with us" << endl;
     cout << "-----------------------------" << endl;
