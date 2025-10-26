@@ -6,6 +6,8 @@
 
 #include <iostream>
 #include <iomanip>
+#include <ctime>
+#include <cmath>
 using namespace std;
 
 void question1();
@@ -13,7 +15,9 @@ void question1a();
 void question2();
 void question2a();
 void question3();
+void question3a();
 void question4();
+void question4a();
 
 
 
@@ -129,7 +133,9 @@ void question2() {
     }
 }
 void question2a(){
-    string item ="Pizza";
+    string Pizza, Burger, Fries, Soda, General_Tao, Orange_Chicken;
+    double item;
+    double gratuuity = 0.15;
     double item_price = 5.99;
     double tax_percent = 0.08;
     double tax_amount;
@@ -137,7 +143,9 @@ void question2a(){
 
     //Greet user and take order
     cout << "Welcome to our CSC restuarant!!" << endl;
-    cout << "You ordered one " << item << "." << endl;
+    cout << "What would you like to order?" << endl;
+    cout << "(1)Pizza($8.50), (2)Burger($5.50), (3)Fries($3.30), (4)Soda($1.99), (5)General Tao($7.50), (6)Orange_Chicken($6.50)" << endl;
+    cin >> item;
 
 
     
@@ -157,10 +165,92 @@ void question2a(){
 }
 
 void question3() {
+    int ready3;
 cout << "Question 3:Choose your own adventure" << endl;
+cout << "Enter 1 to continue" << endl;
+cin >> ready3;
+    if (ready3 = 1)
+        question3a();
+    else {
+        cout << "Invalid entry" << endl;
+        question3();
+    }
+}
+void question3a(){
+    int name;
+cout <<"Welcome adventurer please insert name" << endl;
+cin >> name;
+cout <<"welcome" << name << "Last we left off you had escaped the prison cell and are wandering through the halls" << endl;
+cout << "The halls once filled with the talk of the prisoners now lay dark and quiet" << endl;
+cout << "You have reached a crossroads" << endl;
+cout << "(W) To go left towards the cafeteria, (E) to go to the common area, (N) to go to the guard checkpoint" << endl;
+
+
+
+
+
+
 
 }
 
 void question4() {
+    int choice3;
     cout << "Question 4: Math tester" << endl;
+    cout << "Enter 1 to begin" << endl;
+    cin >> choice3;
+    if (choice3 = 1){
+        question4a();
+    }
+        else {
+        cout << "Invalid input" << endl;
+        question4();
+    }
+    
+}
+void question4a(){
+    int number1, number2, number3, number4, number5, number6, number7, number8, number9, number10;
+    int answer1, answer2, answer3, answer4, answer5;
+    const int MAX = 100;
+    int seed = (rand() % MAX) +1;
+    srand(seed);
+cout << "ARE YOU READY" << endl;
+cout << "TO COMPETE FOR A MILLION DIGITAL DOLLARS" << endl;
+cout << "IN THE COMPETITION OF THE CENTURY" << endl;
+cout << "THE MATH BOWL!!!!!!" << endl;
+cout << "Question 1 for 100 dollars" << endl;
+number1 = (rand() % MAX) + 1;
+number2 = (rand() % MAX) + 1;
+number3 = (rand() % MAX) + 1;
+number4 = (rand() % MAX) + 1;
+number5 = (rand() % MAX) + 1;
+number6 = (rand() % MAX) + 1;
+number7 = (rand() % MAX) + 1;
+number8 = (rand() % MAX) + 1;
+number9 = (rand() % MAX) + 1;
+number10 = (rand() % MAX) + 1;
+cout << "What is " << number1 << " *(times) " << number2 <<endl;
+cin >> answer1;
+if (answer1 = number1 * number2){
+    cout << "Congratulations that is correct!" << endl;
+    cout << "Question 2" << endl;
+    cout << "What is " << number3 << " /(divided) " << number4 << " Nearest whole number" << endl;
+    if (answer2 = number3 / number4){
+    cout << "That is ..... CORRECT!" << endl;
+    cout << "You are at $1000 the next one will bump you up to 10k" << endl;
+    cout << "Question 3" << endl;
+    }
+}
+else { 
+    cout << "Unfornunately that is incorrect" << endl;
+    cout << "Thank you for playing the quiz bowl" << endl;
+    cout << "(1) Retry, (2) main menu" << endl;
+    int menu1;
+    cin >> menu1;
+    if (menu1 = 1) {
+        question4a();
+    }
+    else if (menu1 = 2)
+    main();
+}
+
 }
