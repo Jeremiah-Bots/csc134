@@ -16,6 +16,11 @@ void question2();
 void question2a();
 void question3();
 void question3a();
+void prisonbars();
+void cell();
+void bucket();
+void Hallway();
+void bars2();
 void question4();
 void question4a();
 
@@ -216,11 +221,8 @@ void question3a(){
     int name;
 cout <<"Welcome adventurer please insert name" << endl;
 cin >> name;
-void prisonbars();
-void cell();
-void bucket();
-void Hallway();
-void bars2();
+void question3a();
+
 int choice; 
   int choice2;
   // ask the question
@@ -275,21 +277,21 @@ void cell() {
     }
   }
   else if (2 == choice3) {
-    cout << "You go back the middle of the cell" << endl;
+    cout << "You go back he middle of the cell" << endl;
     main();
   }
   
 }
 
-void bars2(); {
-int key = 1;
-if (1 == key); {
-    cout << "Open the door with the key" << endl;
-    Hallway();
-  }
-  else 
-  cout << "somethigns wrong" << endl;
-  main()
+void bars2() {
+    int key = 1;
+    if (key == 1) {
+        cout << "Open the door with the key" << endl;
+        Hallway();
+    } else {
+        cout << "Something's wrong" << endl;
+        main();
+    }
 }
 
 void Hallway () {
