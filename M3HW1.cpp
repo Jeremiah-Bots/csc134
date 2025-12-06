@@ -138,72 +138,58 @@ void question2() {
     }
 }
 void question2a() {
-    string Pizza, Burger, Fries, Soda, General_Tao, Orange_Chicken;
-    double gratuity;
-    double item;
-    double gratuuity = 0.15;
-    double item_price = 5.99;
+
+int item, choice;
+    double gratuity_rate = 0.15;
     double tax_percent = 0.08;
-    double tax_amount;
-    double total;
-    int choice;
-    //Greet user and take order
-    cout << "Welcome to our CSC restuarant!!" << endl;
+    double item_price = 0.0;
+    string item_name;
+    double tax_amount, gratuity, total;
+
+    cout << "Welcome to our CSC restaurant!!" << endl;
     cout << "What would you like to order?" << endl;
-    cout << "(1)Pizza($8),(2)Burger($7),(2)General Tao($11), (3)Orange_Chicken($12)" << endl;
+    cout << "(1) Pizza ($8)\n(2) Burger ($7)\n(3) General Tao ($11)\n(4) Orange Chicken ($12)" << endl;
     cin >> item;
+
+    // Assign appropriate price and name
     if (item == 1) {
-        int item_price = 8.5;
-        cout << "Ok one Pizza meal coming right up" << endl;
-        cout << "To here (1) or to go (2)?" << endl;
-        cin >> choice;
-        if (choice == 1){
-             //calculate meal price
+        item_price = 8.0;
+        item_name = "Pizza";
+    } else if (item == 2) {
+        item_price = 7.0;
+        item_name = "Burger";
+    } else if (item == 3) {
+        item_price = 11.0;
+        item_name = "General Tao";
+    } else if (item == 4) {
+        item_price = 12.0;
+        item_name = "Orange Chicken";
+    } else {
+        cout << "Sorry, that's not a valid menu choice." << endl;
+        return;
+    }
+
+    cout << "Ok, one " << item_name << " meal coming right up." << endl;
+    cout << "To here (1) or to go (2)?" << endl;
+    cin >> choice;
+
+    // Calculate bill
+    gratuity = item_price * gratuity_rate;
     tax_amount = item_price * tax_percent;
-    gratuity = item_price * gratuuity;
-    total = item_price + tax_amount + gratuity;
+    total = item_price + gratuity + tax_amount;
 
-    //print    the receipt
+    // Print receipt
     cout << setprecision(2) << fixed;
-    cout << "Thank you for shopping with us" << endl;
+    cout << "\nThank you for shopping with us" << endl;
     cout << "-----------------------------" << endl;
-    cout << "Pizza" << "\t$" << item_price << endl;
-    cout << "Gratuity" << "\t$" << gratuity << endl;
-    cout << "Tax" << "\t$" << tax_amount << endl;
-    cout << "-----------------------------" <<endl;
-    cout << "Total" << "\t\t$" << total << endl;
-    cout << endl;
-        }
-    }
-    else if (item == 2){
-    cout << "Ok one Pizza meal coming right up" << endl;
-        cout << "To here (1) or to go (2)?" << endl;
-        cin >> choice;
-        if (choice == 1){
-             //calculate meal price
-    tax_amount = item_price * tax_percent;
-    gratuity = item_price * gratuuity;
-    total = item_price + tax_amount + gratuity;
-
-    //print    the receipt
-    cout << setprecision(2) << fixed;
-    cout << "Thank you for shopping with us" << endl;
+    cout << item_name << "\t\t$" << item_price << endl;
+    cout << "Gratuity" << "\t\t$" << gratuity << endl;
+    cout << "Tax" << "\t\t$" << tax_amount << endl;
     cout << "-----------------------------" << endl;
-    cout << "Pizza" << "\t$" << item_price << endl;
-    cout << "Gratuity" << "\t$" << gratuity << endl;
-    cout << "Tax" << "\t$" << tax_amount << endl;
-    cout << "-----------------------------" <<endl;
-    cout << "Total" << "\t\t$" << total << endl;
-    }
-    else if (item == 3){
-
-    }
-    else if (item == 4){
-
-    }
-
+    cout << "Total" << "\t\t$" << total << endl << endl;
+    main();
 }
-}
+
 
 void question3() {
     int ready3;
@@ -218,7 +204,7 @@ cin >> ready3;
     }
 }
 void question3a(){
-    int name;
+   string name;
 cout <<"Welcome adventurer please insert name" << endl;
 cin >> name;
 void question3a();
@@ -248,7 +234,7 @@ void prisonbars() {
   cout << "Move back to the middle of the cell(1) " << endl;
   cin >> choice2;
   if (1 == choice2) {
-    main();
+    question3a();
   }
   else if (0 == choice2) {
     cout << "You should focus on escaping right now." << endl;
@@ -273,12 +259,12 @@ void cell() {
     }
     else if (2 == choice3) {
       cout << "You move away from the bucket in disgust " << endl;
-      main();
+     question3a();
     }
   }
   else if (2 == choice3) {
     cout << "You go back he middle of the cell" << endl;
-    main();
+   question3a();
   }
   
 }
@@ -297,7 +283,7 @@ void bars2() {
 void Hallway () {
   cout << "You managed to get out the cell it's just a matter of time before you can escape" << endl;
   cout << "Thank you for playing the demo full game out soon" << endl;
-
+ main();
 }
 
 void question4() {
