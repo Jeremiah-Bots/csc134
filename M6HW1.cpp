@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-// Global variables for keys
+
 int hasKey1 = 0;
 int hasKey2 = 0;
 int hasKey3 = 0;
 
-// Function declarations
+
 void start();
 void chapter2();
 void prisonbars();
@@ -39,7 +39,7 @@ int main() {
     return 0;
 }
 
-// The intro (cell or prisonbars)
+
 void start() {
     int choice;
     cout << "You awake in a gloomy prison cell. With nothing on you but the rags on your back." << endl;
@@ -55,7 +55,7 @@ void start() {
     }
 }
 
-// Bars without the key
+
 void prisonbars() {
     cout << "You move towards the prison bars. The bars are barely wide enough to fit your head through with some force. Nobody is around. There is a lock on the cell. Maybe if you find the key you can get out." << endl;
     cout << "Move back to the middle of the cell(1): ";
@@ -67,7 +67,7 @@ void prisonbars() {
         cout << "You should focus on escaping right now." << endl;
 }
 
-// Get the key in cell, then go to bars2
+
 void cell() {
     int choice3;
     cout << "You explore the cell. A stone bed and a bucket, not much for decor, but it is for criminals so you can't complain. A glint in the bucket catches your eye, maybe you should check it out." << endl;
@@ -93,7 +93,6 @@ void cell() {
         start();
 }
 
-// Use key1 to get out
 void bars2() {
     if (hasKey1 == 1) {
         cout << "You unlock the door with the key and open it!" << endl;
@@ -110,7 +109,6 @@ void Hallway() {
     chapter2();
 }
 
-// The sequence in the hallway
 void chapter2() {
     cout << "You had just barely managed to escape your cell when you hear in the distance something wet dragging closer and closer to you." << endl;
     int count = 1;
@@ -178,7 +176,6 @@ void intersection() {
     }
 }
 
-// Wardens room logic - pick up big key
 void wardens() {
     cout << "The wardens door opens and you find that one of the bookshelves is wide open." << endl;
     cout << "A secret door leading into a spiraling abyss awaits." << endl;
@@ -189,7 +186,7 @@ void wardens() {
     intersection();
 }
 
-// Guards room logic - pick up small key
+
 void guards() {
     cout << "The door opens leading to the guards room." << endl;
     cout << "No weapons or armor inside and things thrown haphazardly." << endl;
@@ -198,7 +195,7 @@ void guards() {
     intersection();
 }
 
-// Cafeteria logic - pick up another key
+
 void cafe() {
     cout << "You enter the cafeteria and the food looks half eaten." << endl;
     cout << "As if they left in a hurry." << endl;
@@ -207,7 +204,6 @@ void cafe() {
     intersection();
 }
 
-// Try to open the last lock
 void lock() {
     if (hasKey2 == 1 && hasKey3 == 1 && hasKey1 == 1) {
         cout << "The lock opens and you are free! But for how long?" << endl;
