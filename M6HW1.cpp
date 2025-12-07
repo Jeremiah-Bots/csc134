@@ -144,7 +144,7 @@ void ending2() {
     cout << "You hide from the noise and in your haste you drop the key and closed the cell door." << endl;
     cout << "With no way of opening the cell again, you starve to death." << endl;
     cout << "Bad ending." << endl;
-    start();
+    main();
 }
 
 void death() {
@@ -161,7 +161,8 @@ void intersection() {
     cout << "Where do you want to go?" << endl
          << "1. Wardens room" << endl
          << "2. Guards room" << endl
-         << "3. Cafeteria" << endl;
+         << "3. Cafeteria" << endl
+         << "4, The main gate" << endl;
     cin >> choice;
     if (choice == 1)
         wardens();
@@ -169,6 +170,8 @@ void intersection() {
         guards();
     else if (choice == 3)
         cafe();
+    else if (choice == 4)
+        lock();
     else {
         cout << "That is not a valid option, try again." << endl;
         intersection();
