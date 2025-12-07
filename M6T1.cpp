@@ -46,13 +46,11 @@ void part1() {
 }
 
 void part2() {
-    // Method 2 uses two arrays:
-    // Names of the days
-    // # pokemon found on the days
+
 
     const int SIZE = 5;
-    string days[SIZE] = {"M", "T", "W", "Th", "F"}; // initialized
-    int car[SIZE]; // not initialized
+    string days[SIZE] = {"M", "T", "W", "Th", "F"}; 
+    int car[SIZE];
     int car_total = 0;
     double car_avg = 0.0;
 
@@ -60,15 +58,14 @@ void part2() {
         cout << "# on " << days[i] << ": ";
         cin >> car[i];
     }
-    // print output in "tabular" (table) format
+
     cout << "Day\t|\tCars" << endl;
     cout << "--------------------"<< endl;
     for (int i=0; i < SIZE; i++) {
         cout << days[i] << "\t|\t" << car[i] << endl;
-        // find the total
         car_total += car[i];
     }
-    // find total, print results
+   
     car_avg = (double) car_total / SIZE;
     cout << "Total = " << car_total << endl;
     cout << "Average = " << car_avg << endl;
