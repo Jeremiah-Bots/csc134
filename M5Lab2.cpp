@@ -9,10 +9,10 @@ using namespace std;
 // the getLength,
 // getWidth, getArea, and displayData
 // functions here.
-double getLength(double);
+double getLength();
 double getWidth();
-double getArea();
-void displayData();
+double getArea(double width, double length);
+void displayData(double length, double width, double area);
 int main()
 {
   
@@ -28,7 +28,7 @@ int main()
    width = getWidth();
    
    // Get the rectangle's area.
-   area = getArea( width, length);
+   area = getArea(width, length);
    
    // Display the rectangle's data.
    displayData(length, width, area);
