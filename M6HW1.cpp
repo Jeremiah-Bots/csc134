@@ -153,7 +153,6 @@ void death() {
     main();
 }
 
-// The intersection chooses rooms, picking up keys
 void intersection() {
     int choice;
     cout << "Where do you want to go?" << endl
