@@ -29,6 +29,8 @@ void peakinthedoor();
 void Enternoeeyes();
 void note();
 void blackout();
+void ending();
+void Frontdoor();
 // TODO: add more choices here
 
 int main() {
@@ -169,6 +171,12 @@ void choice_go_home() {
     cout << "1. Grab your trusty bat and go find whats causing the noise" << endl;
     cout << "2. Hide and wait till your parents come" << endl;
     cin >> choice;
+    if (1 == choice) {
+        Frontdoor();
+    }
+    else if (2 == choice ) {
+        ending();
+    }
  }
  void note()
  {
