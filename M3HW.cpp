@@ -10,7 +10,7 @@ Hart - Gold
 
 using namespace std;
 
-// Function prototypes
+
 void chatBot();
 void receiptCalculator();
 void chooseYourOwnAdventure();
@@ -19,7 +19,7 @@ void mathPractice();
 int main() {
     srand(time(0));  // Seed random number generator
 
-    // Call each question function
+    // Questions
     chatBot();
     receiptCalculator();
     chooseYourOwnAdventure();
