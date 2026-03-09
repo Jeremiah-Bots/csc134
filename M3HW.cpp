@@ -82,21 +82,22 @@ void chooseYourOwnAdventure() {
     cin >> choice1;
 
     if (choice1 == "left") {
-        cout << "t! Do you fight or run? ";
+        cout << "The suits of armor come to life!  ";
+        cout <<" Do you fight or run? ";
         string choice2;
         cin >> choice2;
 
         if (choice2 == "fight") {
-            cout << "The dragon defeats you. Game over!" << endl;
+            cout << "The suits of armor overwhelm you. Game over!" << endl;
         } else if (choice2 == "run") {
-            cout << "You escape safely. You win!" << endl;
+            cout << "You run past the armor and into a safe room. You win!" << endl;
         } else {
-            cout << "Indecision leads to your demise. Game over!" << endl;
+            cout << "The suits of armor attack you while you think. Game over!" << endl;
         }
     } else if (choice1 == "right") {
-        cout << "You fall into a trap. Game over!" << endl;
+        cout << "The door opens up to a treasure chest. You found the treasure!" << endl;
     } else {
-        cout << "You wander aimlessly until night falls. Game over!" << endl;
+        cout << "You leave the ruins. Game over!" << endl;
     }
     cout << endl;
 }
